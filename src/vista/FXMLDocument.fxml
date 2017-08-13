@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="392.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.FXMLDocumentController">
+  <children>
+    <Label fx:id="lbNombre" layoutX="40.0" layoutY="72.0" text="Nombre:" />
+    <Label fx:id="lbEdad" layoutX="40.0" layoutY="105.0" text="Edad:" />
+    <Label fx:id="lbTelefono" layoutX="40.0" layoutY="137.0" text="Telefono:" />
+    <TextField fx:id="txNombre" layoutX="106.0" layoutY="69.0" prefWidth="200.0" />
+    <TextField fx:id="txEdad" layoutX="106.0" layoutY="102.0" prefWidth="200.0" />
+    <TextField fx:id="txTelefono" layoutX="106.0" layoutY="134.0" prefWidth="200.0" />
+    <MenuBar layoutX="0.0" layoutY="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Pila">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#AgregarPBt" text="Agregar Persona" />
+            <MenuItem mnemonicParsing="false" onAction="#MostrarBt" text="Mostrar" />
+            <MenuItem mnemonicParsing="false" onAction="#EliminarPBt" text="Eliminar Persona" />
+          </items>
+        </Menu>
+            <Menu mnemonicParsing="false" text="Acciones">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#DuplicarPBt" onMenuValidation="#InvertirPBt" text="Duplicar" />
+                  <MenuItem mnemonicParsing="false" onAction="#InvertirPBt" text="Invertir" />
+              </items>
+            </Menu>
+      </menus>
+    </MenuBar>
+    <WebView fx:id="view21" layoutX="8.0" layoutY="184.0" prefHeight="200.0" prefWidth="194.0" />
+      <WebView fx:id="view2" layoutX="217.0" layoutY="184.0" prefHeight="200.0" prefWidth="194.0" />
+  </children>
+</AnchorPane>
